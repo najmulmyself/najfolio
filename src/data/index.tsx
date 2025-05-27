@@ -1,20 +1,30 @@
 import { Icons } from "@/components/icons";
-import { Code, HomeIcon, NotebookPen, SquareTerminal, UserRound } from "lucide-react";
+import {
+  Code,
+  HomeIcon,
+  NotebookPen,
+  SquareTerminal,
+  UserRound,
+} from "lucide-react";
 export const DATA = {
   name: "Najmul Huda",
   url: "https://eldoraui.site/",
-  description:"I'm a flutter developer, optimist, and love building things. I'm currently on a Open-source Project",
-  description2:" And Focusing on",
-  description3:"Which is a open-source web framework built with",
-  summary: "In 2023, I started focusing entirely on building innovative web applications and open-source projects like [Eldora UI](https://eldoraui.site/), after honing my skills through extensive hands-on experience in Full Stack Development. [I'm persing my BTech in Artificial Intelligence at Woxsen University](https://woxsen.edu.in/), where I also gained practical experience through internships at cutting-edge tech companies. Throughout my journey, I've had the opportunity to explore emerging technologies, compete in hackathons, and contribute to collaborative projects. I'm passionate about crafting high-quality, efficient solutions that push the boundaries of web development.",
-  apperciation: "Take a moment to explore the recognition I've garnered within the Twitter community for my work on [Eldora UI](https://eldoraui.site/). The positive feedback and appreciation from fellow developers and enthusiasts highlight the impact and value of the [EldoraUI](https://eldoraui.site/) project. It's rewarding to see the project being acknowledged and celebrated within the broader tech community!",
-  footer:"Interested in learning more about my professional journey and skill set? [Click here to view my resume](/Mudunuribhaskarakarthikeyavarma-Resume.pdf) and discover the experiences, achievements, and expertise that I bring to the table.",
-  linkedin:[
+  description:
+    "I'm a flutter developer, optimist, and love building things. I'm currently on a Open-source Project",
+  description2: " And Focusing on",
+  description3: "Which is a open-source web framework built with",
+  summary:
+    "In 2023, I started focusing entirely on building innovative web applications and open-source projects like [Flutter UI](https://eldoraui.site/), after honing my skills through extensive hands-on experience in Full Stack Development. [I'm persing my BTech in Artificial Intelligence at Woxsen University](https://woxsen.edu.in/), where I also gained practical experience through internships at cutting-edge tech companies. Throughout my journey, I've had the opportunity to explore emerging technologies, compete in hackathons, and contribute to collaborative projects. I'm passionate about crafting high-quality, efficient solutions that push the boundaries of web development.",
+  apperciation:
+    "Take a moment to explore the recognition I've garnered within the Twitter community for my work on [Eldora UI](https://eldoraui.site/). The positive feedback and appreciation from fellow developers and enthusiasts highlight the impact and value of the [EldoraUI](https://eldoraui.site/) project. It's rewarding to see the project being acknowledged and celebrated within the broader tech community!",
+  footer:
+    "Interested in learning more about my professional journey and skill set? [Click here to view my resume](/Najmul_Huda_Resume.pdf) and discover the experiences, achievements, and expertise that I bring to the table.",
+  linkedin: [
     {
       title: "najmulmyself",
       href: "https://www.linkedin.com/in/najmulmyself/",
       icon: "/linkedin-logo.svg",
-      profile: "/me.jpeg",
+      profile: "/me.jpg",
     },
   ],
   github: [
@@ -22,8 +32,8 @@ export const DATA = {
       title: "najmulmyself",
       href: "https://github.com/najmulmyself",
       icon: "/github-logo.svg",
-      profile: "/me.jpeg",
-    }
+      profile: "/me.jpg",
+    },
   ],
   images: [
     {
@@ -32,7 +42,7 @@ export const DATA = {
     },
     {
       title: "Me",
-      href: "/me.jpeg",
+      href: "/me.jpg",
     },
     {
       title: "My first day at my office during internship",
@@ -40,11 +50,11 @@ export const DATA = {
     },
     {
       title: "our sumit at woxsen for discussing ideas",
-      href: "/ideasmeetup.jpeg",
+      href: "/me3.jpg",
     },
     {
       title: "while exploring",
-      href: "/image6.jpeg",
+      href: "/me2.jpg",
     },
     {
       title: "My working stuff",
@@ -70,32 +80,32 @@ export const DATA = {
       href: "/react-logo.svg",
       site: "https://react.dev",
     },
-    // Import your teck stack here from https://simpleicons.org/ 
+    // Import your teck stack here from https://simpleicons.org/
   ],
-  skillsdescription:"Here’s a section showcasing the skills I’ve learned and use frequently. These tools and technologies are at the core of my development process, enabling me to build efficient and high-quality solutions.",
+  skillsdescription:
+    "Here’s a section showcasing the skills I’ve learned and use frequently. These tools and technologies are at the core of my development process, enabling me to build efficient and high-quality solutions.",
   Skills: [
-    
     {
       id: 1,
-      title: "Next.js",
-      href: "/next-logo.svg",
+      title: "Flutter",
+      href: "/flutter.svg",
       site: "https://nextjs.org",
     },
     {
       id: 2,
-      title: "React",
+      title: "Kotlin",
       href: "/react-logo.svg",
       site: "https://react.dev",
     },
     {
       id: 3,
-      title: "Javascript",
+      title: "Golang",
       href: "/javascript.svg",
       site: "https://react.dev",
     },
     {
       id: 4,
-      title: "Typescript",
+      title: "C++",
       href: "/typescript.svg",
       site: "https://react.dev",
     },
@@ -107,13 +117,13 @@ export const DATA = {
     },
     {
       id: 5,
-      title: "Mdx",
+      title: "BLoC",
       href: "/mdxl.svg",
       site: "https://react.dev",
     },
     {
       id: 6,
-      title: "Tailwind CSS",
+      title: "Riverpod",
       href: "/tailwindcss.svg",
       site: "https://react.dev",
     },
@@ -129,16 +139,16 @@ export const DATA = {
       href: "/aws.svg",
       site: "https://react.dev",
     },
-    
+
     {
       id: 9,
-      title: "Framer Motion",
+      title: "Firebase",
       href: "/fm.svg",
       site: "https://react.dev",
     },
     {
       id: 10,
-      title: "Php",
+      title: "Supabase",
       href: "/php-color.svg",
       site: "https://react.dev",
     },
@@ -148,8 +158,8 @@ export const DATA = {
       href: "/mysql.svg",
       site: "https://react.dev",
     },
-    
-    // Import your teck stack here from https://simpleicons.org/ 
+
+    // Import your teck stack here from https://simpleicons.org/
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -173,10 +183,11 @@ export const DATA = {
       },
     },
   },
-  worksummary: "On a mission to build products developers love, I'm dedicated to crafting tools that empower and inspire the dev community. With a focus on innovation and user experience, my journey has been about creating solutions that not only meet the needs of today but also set the stage for the future. Here's a comprehensive summary of my work so far, reflecting the passion and precision that drive me forward.",
+  worksummary:
+    "On a mission to build products developers love, I'm dedicated to crafting tools that empower and inspire the dev community. With a focus on innovation and user experience, my journey has been about creating solutions that not only meet the needs of today but also set the stage for the future. Here's a comprehensive summary of my work so far, reflecting the passion and precision that drive me forward.",
   work: [
     {
-      id : 1,
+      id: 1,
       company: "Articus solutions pvt ltd",
       href: "https://articussol.com/",
       title: "React Developer Intern",
@@ -187,7 +198,7 @@ export const DATA = {
         "Spearheading the development of frontend applications using **React** and **Next.js**, with a focus on **Tailwind CSS** and **TypeScript** to create responsive and high-performance user interfaces.Deployed **RESTful APIs** to enable instantaneous data updates and retrieval for dynamic web applications, leading to a 30% boost in user satisfaction and a 20% reduction in server load time.Collaborated closely with designers and backend developers to seamlessly integrate APIs and develop data-driven features, enhancing the functionality and user experience of the application.",
     },
     {
-      id : 2,
+      id: 2,
       company: "AI Research center - woxsen university",
       badges: [],
       href: "https://aircwou.in/",
@@ -198,9 +209,9 @@ export const DATA = {
       description:
         "Led the development of the AI Research Centre website using WordPress, crafting custom themes and plugins to precisely meet client specifications and enhance site functionality. Optimized website performance through the implementation of best practices in responsive design, SEO, and speed optimization, resulting in faster load times and improved user experience. Collaborated with cross-functional teams, including designers and content creators, to deliver high-quality, fully functional websites on time and within scope. Developed a cutting-edge Virtual Mall project using Three.js and TypeScript, creating an immersive 3D shopping experience. [Demo Link](#) and the main [Live Link to the AI Research Centre website](https://aircwou.in)",
     },
-    
   ],
-  educationsummary:"My education has been a journey of exploration and growth, equipping me with a strong foundation in technology and problem-solving. From mastering core concepts to embracing cutting-edge advancements, each step has shaped my ability to innovate and contribute meaningfully to the tech landscape.",
+  educationsummary:
+    "My education has been a journey of exploration and growth, equipping me with a strong foundation in technology and problem-solving. From mastering core concepts to embracing cutting-edge advancements, each step has shaped my ability to innovate and contribute meaningfully to the tech landscape.",
   education: [
     {
       id: 1,
@@ -211,10 +222,9 @@ export const DATA = {
       start: "2021",
       end: "2025",
     },
-    
-    
   ],
-  projectssummary:"Explore my projects where ideas meet execution. Each project showcases my dedication to crafting impactful digital experiences, turning concepts into reality.",
+  projectssummary:
+    "Explore my projects where ideas meet execution. Each project showcases my dedication to crafting impactful digital experiences, turning concepts into reality.",
   projects: [
     {
       title: "Eldora UI",
@@ -223,7 +233,13 @@ export const DATA = {
       active: true,
       description:
         "Collection of [re-usable components](https://eldoraui.site/components) that you can copy and paste into your web apps. It primarily features [components, blocks](https://eldoraui.site/components), and [templates](https://eldoraui.site/templates).",
-      iconLists: ["/next-logo.svg", "/tailwindcss.svg","/typescript.svg","/fm.svg","/mdxl.svg"],
+      iconLists: [
+        "/next-logo.svg",
+        "/tailwindcss.svg",
+        "/typescript.svg",
+        "/fm.svg",
+        "/mdxl.svg",
+      ],
       links: [
         {
           type: "visit website",
@@ -232,8 +248,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "https://eldoraui.site/previews/components/core/eldoraui.mp4",
+      video: "https://eldoraui.site/previews/components/core/eldoraui.mp4",
     },
     {
       title: "Portfolio Template",
@@ -242,14 +257,19 @@ export const DATA = {
       active: true,
       description:
         "Minimalist [developer portfolio](karthikeyavarmamudunuri.vercel.app/) using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
-      iconLists: ["/next-logo.svg", "/tailwindcss.svg","/typescript.svg","/eldoraui.svg","/fm.svg"],
+      iconLists: [
+        "/next-logo.svg",
+        "/tailwindcss.svg",
+        "/typescript.svg",
+        "/eldoraui.svg",
+        "/fm.svg",
+      ],
       links: [
         {
           type: "visit Website",
           href: "karthikeyavarmamudunuri.vercel.app/",
           icon: <SquareTerminal className="size-3" />,
         },
-       
       ],
       image: "",
       video: "https://eldoraui.site/previews/components/core/portfolio.mp4",
@@ -260,14 +280,20 @@ export const DATA = {
       dates: "July 2024 - August 2024",
       active: true,
       description:
-      "Template for [saas landing page](https://saas-landing-page-template-eldoraui.vercel.app/) with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
-      iconLists: ["/next-logo.svg", "/tailwindcss.svg","/typescript.svg","/eldoraui.svg","/fm.svg"],
+        "Template for [saas landing page](https://saas-landing-page-template-eldoraui.vercel.app/) with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
+      iconLists: [
+        "/next-logo.svg",
+        "/tailwindcss.svg",
+        "/typescript.svg",
+        "/eldoraui.svg",
+        "/fm.svg",
+      ],
       links: [
         {
           type: "visit Website",
           href: "https://saas-landing-page-template-eldoraui.vercel.app/",
           icon: <SquareTerminal className="size-3" />,
-        }
+        },
       ],
       image: "https://eldoraui.site/previews/components/core/saas.png",
       video: "",
@@ -279,7 +305,13 @@ export const DATA = {
       active: true,
       description:
         "A [virtual mall](https://vrmalldemo.netlify.app/) created using three.js and react with user interaction.",
-      iconLists: ["/next-logo.svg", "/threejs.svg","tailwindcss.svg","/typescript.svg","/gsap.svg"],
+      iconLists: [
+        "/next-logo.svg",
+        "/threejs.svg",
+        "tailwindcss.svg",
+        "/typescript.svg",
+        "/gsap.svg",
+      ],
       links: [
         {
           type: "visit Website",
@@ -288,42 +320,47 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "/vrmall.mp4",
+      video: "/vrmall.mp4",
     },
   ],
-  contributionssummary:"Committing Code and Crimes Against Open Source World A place where you can witness my caffeinated coding adventures and see just how much coffee it takes to fuel my commits. from my first `Hello World` to my latest breakthrough, and everything in between",
+  contributionssummary:
+    "Committing Code and Crimes Against Open Source World A place where you can witness my caffeinated coding adventures and see just how much coffee it takes to fuel my commits. from my first `Hello World` to my latest breakthrough, and everything in between",
   contributions: [
     {
       link: "https://github.com/karthikmudunuri/eldoraui",
       title: "eldora ui",
-      description : "Eldora UI is a collection of re-usable components that you can copy and paste into your web apps. It primarily features components, blocks, and templates.",
+      description:
+        "Eldora UI is a collection of re-usable components that you can copy and paste into your web apps. It primarily features components, blocks, and templates.",
       stars: "847",
-      forks:"29",
+      forks: "29",
     },
     {
       link: "https://github.com/karthikmudunuri/saas-landing-page-template",
       title: "saas-landing-page-template",
-      description : "Template for saas landing page with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
+      description:
+        "Template for saas landing page with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
       stars: "59",
-      forks:"13",
+      forks: "13",
     },
     {
       link: "https://github.com/karthikmudunuri/portfolio-template",
       title: "portfolio-template",
-      description : "Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
+      description:
+        "Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
       stars: "35",
-      forks:"18",
+      forks: "18",
     },
     {
       link: "https://github.com/shuding/nextra",
       title: "nextra",
-      description : "Simple, powerful and flexible site generation framework with everything you love from Next.js.",
+      description:
+        "Simple, powerful and flexible site generation framework with everything you love from Next.js.",
       stars: "11.2k",
-      forks:"1.2k",
+      forks: "1.2k",
     },
   ],
-  hackathonsummary:"I like building things During my time in university, I attended [hackathons](/about). People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
+  hackathonsummary:
+    "I like building things During my time in university, I attended [hackathons](/about). People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
   hackathons: [
     {
       id: 1,
@@ -332,9 +369,8 @@ export const DATA = {
       location: "Hyderabad, India",
       description:
         "We have recieved second price in the hackathon [AI Expo](https://www.linkedin.com/feed/update/urn:li:activity:7051137569832517632?utm_source=share&utm_medium=member_desktop) where we created 2d to 3d project using AI and machine learning.and we have also created face emotion detection for this using python.",
-      logo:
-        "/airc.png",
-      images:"/hackathonaiexpo.jpeg",
+      logo: "/airc.png",
+      images: "/hackathonaiexpo.jpeg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
