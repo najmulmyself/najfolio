@@ -94,19 +94,19 @@ export const DATA = {
     {
       id: 2,
       title: "Kotlin",
-      href: "/react-logo.svg",
+      href: "/kotlin.svg",
       site: "https://react.dev",
     },
     {
       id: 3,
       title: "Golang",
-      href: "/javascript.svg",
+      href: "/go.svg",
       site: "https://react.dev",
     },
     {
       id: 4,
       title: "C++",
-      href: "/typescript.svg",
+      href: "/cpp.svg",
       site: "https://react.dev",
     },
     {
@@ -143,7 +143,7 @@ export const DATA = {
     {
       id: 9,
       title: "Firebase",
-      href: "/fm.svg",
+      href: "/firebase.svg",
       site: "https://react.dev",
     },
     {
@@ -215,12 +215,12 @@ export const DATA = {
   education: [
     {
       id: 1,
-      school: "Woxsen university",
-      href: "https://woxsen.edu.in/",
-      degree: "B.tech in Data science and Artificial Intelligence",
-      logoUrl: "/wou.png",
-      start: "2021",
-      end: "2025",
+      school: "Dhaka College, Dhaka",
+      href: "https://www.dhakacollege.edu.bd/en",
+      degree: "BSc in Geography and Environmental Science",
+      logoUrl: "/dc.png",
+      start: "2018",
+      end: "2024",
     },
   ],
   projectssummary:
