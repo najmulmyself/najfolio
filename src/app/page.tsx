@@ -134,8 +134,8 @@ export default function Page() {
       <p className="prose prose-neutral w-full dark:prose-invert">
         {DATA.description}
         
-        <span className="not-prose ml-2 mr-2">
-          <Badge href={DATA.Iconsvg[0].site}>
+        {/* <span className="not-prose ml-2 mr-2"> */}
+          {/* <Badge href={DATA.Iconsvg[0].site}>
             <img
               alt={DATA.Iconsvg[0].title}
               src={DATA.Iconsvg[0].href}
@@ -144,11 +144,11 @@ export default function Page() {
               height="14"
             />
             {DATA.Iconsvg[0].title}
-          </Badge>
-        </span>
+          </Badge> */}
+        {/* </span> */}
         {DATA.description2}
-        <span className="not-prose ml-2 mr-2">
-        <Badge href={DATA.Iconsvg[1].site}>
+        {/* <span className="not-prose ml-2 mr-2"> */}
+        {/* <Badge href={DATA.Iconsvg[1].site}>
           <img
             alt={DATA.Iconsvg[1].title}
             src={DATA.Iconsvg[1].href}
@@ -157,11 +157,11 @@ export default function Page() {
             height="14"
           />
           {DATA.Iconsvg[1].title}
-        </Badge>
-        </span>
+        </Badge> */}
+        {/* </span> */}
         {DATA.description3}
         <span className="not-prose ml-2">
-        <Badge href={DATA.Iconsvg[2].site}>
+        {/* <Badge href={DATA.Iconsvg[2].site}>
         <img
             alt={DATA.Iconsvg[2].title}
             src={DATA.Iconsvg[2].href}
@@ -170,7 +170,7 @@ export default function Page() {
             height="14"
           />
          {DATA.Iconsvg[2].title}
-        </Badge>
+        </Badge> */}
         </span>
       </p>
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
