@@ -10,8 +10,9 @@ export const DATA = {
   name: "Najmul Huda",
   url: "https://eldoraui.site/",
   description:
-    "I'm a flutter developer, optimist, and love building things. I'm currently on a Open-source Project",
-  description2: " And Focusing on",
+    "I'm a Mobile Application Developer, mostly with Flutter and Kotlin.At the same time, I’m exploring backend with Go and brushing up on computer science fundamentals.",
+  description2:
+    " Honestly, I don’t just want to build apps anymore. I want to understand the whole stack. From UI design to system internals, I’m chasing the bigger picture so I can grow into a well-rounded software engineer, not just someone who plugs code into a screen.",
   description3: "Which is a open-source web framework built with",
   summary:
     "In 2023, I started focusing entirely on building innovative web applications and open-source projects like [Flutter UI](https://eldoraui.site/), after honing my skills through extensive hands-on experience in Full Stack Development. [I'm persing my BTech in Artificial Intelligence at Woxsen University](https://woxsen.edu.in/), where I also gained practical experience through internships at cutting-edge tech companies. Throughout my journey, I've had the opportunity to explore emerging technologies, compete in hackathons, and contribute to collaborative projects. I'm passionate about crafting high-quality, efficient solutions that push the boundaries of web development.",
@@ -64,21 +65,21 @@ export const DATA = {
   Iconsvg: [
     {
       id: 1,
-      title: "Eldora UI",
-      href: "/eldoraui.svg",
-      site: "https://eldoraui.site/",
+      title: "Golang",
+      href: "/go.svg",
+      site: "#",
     },
     {
       id: 2,
-      title: "Next.js",
-      href: "/next-logo.svg",
-      site: "https://nextjs.org",
+      title: "Flutter",
+      href: "/flutter.svg",
+      site: "#",
     },
     {
       id: 3,
-      title: "React",
-      href: "/react-logo.svg",
-      site: "https://react.dev",
+      title: "Kotlin",
+      href: "/kotlin.svg",
+      site: "#",
     },
     // Import your teck stack here from https://simpleicons.org/
   ],
