@@ -189,6 +189,28 @@ export const DATA = {
   work: [
     {
       id: 1,
+      company: "Gold Kinen Technologies",
+      href: "#",
+      title: "Software Engineer",
+      logoUrl: "",
+      start: "Jan 2024",
+      end: "Present",
+      description:
+        "Working as a Software Engineer, contributing to various software development projects. Responsible for designing, developing, and maintaining scalable applications while collaborating with cross-functional teams to deliver high-quality solutions.",
+    },
+    {
+      id: 2,
+      company: "Arbree Solutions Ltd.",
+      href: "#",
+      title: "Software Engineer",
+      logoUrl: "",
+      start: "March 2022",
+      end: "Dec 2023",
+      description:
+        "Contributed to the development and maintenance of software solutions. Worked on implementing new features, optimizing existing code, and ensuring seamless integration across different systems.",
+    },
+    {
+      id: 3,
       company: "Articus solutions pvt ltd",
       href: "https://articussol.com/",
       title: "React Developer Intern",
@@ -199,7 +221,7 @@ export const DATA = {
         "Spearheading the development of frontend applications using **React** and **Next.js**, with a focus on **Tailwind CSS** and **TypeScript** to create responsive and high-performance user interfaces.Deployed **RESTful APIs** to enable instantaneous data updates and retrieval for dynamic web applications, leading to a 30% boost in user satisfaction and a 20% reduction in server load time.Collaborated closely with designers and backend developers to seamlessly integrate APIs and develop data-driven features, enhancing the functionality and user experience of the application.",
     },
     {
-      id: 2,
+      id: 4,
       company: "AI Research center - woxsen university",
       badges: [],
       href: "https://aircwou.in/",
