@@ -387,7 +387,7 @@ export const DATA = {
   hackathons: [
     {
       id: 1,
-      title: "AI Expo 2025",
+      title: "AI Expo 2029",
       dates: "10th April 2024",
       location: "Hyderabad, India",
       description:
