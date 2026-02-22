@@ -211,8 +211,8 @@ export const DATA = {
     },
     {
       id: 3,
-      company: "Articus solutions pvt ltd",
-      href: "https://articussol.com/",
+      company: "Gold Kinen Technologies",
+      href: "https://goldkinen.com/",
       title: "React Developer Intern",
       logoUrl: "/articus.jpeg",
       start: "Jan 2024",
@@ -387,7 +387,7 @@ export const DATA = {
   hackathons: [
     {
       id: 1,
-      title: "AI Expo 2029",
+      title: "AI Expo 2025",
       dates: "10th April 2024",
       location: "Hyderabad, India",
       description:
