@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 export const DATA = {
   name: "Najmul Huda",
-  url: "https://eldoraui.site/",
+  url: "https://eldoraui.site/xyzabc",
   description:
     "I'm a Mobile Application Developer, mostly with Flutter and Kotlin.At the same time, I’m exploring backend with Go and brushing up on computer science fundamentals.",
   description2:
