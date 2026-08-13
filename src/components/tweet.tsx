@@ -20,7 +20,10 @@ const ClientTweetCard = ({
   const { data, error, isLoading } = useTweet(id, apiUrl, fetchOptions);
 
   if (isLoading) return fallback;
-  if (error || !data) {
+  // `useTweet` resolves `data` even for malformed/empty payloads (rate-limited
+  // or geo-blocked Syndication API), so validate `entities` before rendering —
+  // otherwise `enrichTweet` throws "entities is not iterable".
+  if (error || !data || !Array.isArray(data.entities)) {
     const NotFound = components?.TweetNotFound || TweetNotFound;
     return <NotFound error={onError ? onError(error) : error} />;
   }

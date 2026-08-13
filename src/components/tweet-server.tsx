@@ -246,6 +246,13 @@ export const EldoraTweet = ({
   components?: TwitterComponents;
   className?: string;
 }) => {
+  // Guard against malformed/empty tweet payloads (e.g. when the Syndication
+  // API is rate-limited or geo-blocked). `enrichTweet` iterates `tweet.entities`
+  // and throws "entities is not iterable" if it's missing.
+  if (!tweet || !Array.isArray(tweet.entities)) {
+    return <TweetNotFound className={className} />;
+  }
+
   const enrichedTweet = enrichTweet(tweet);
   return (
     <div className="group">
@@ -257,7 +264,7 @@ export const EldoraTweet = ({
             <p className="font-medium text-neutral-900 dark:text-neutral-100">
             <TweetHeader tweet={enrichedTweet} />
             </p>
-            
+
             <TweetBody tweet={enrichedTweet} />
             
             

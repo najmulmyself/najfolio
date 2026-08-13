@@ -183,6 +183,17 @@ export const DATA = {
         navbar: true,
       },
     },
+    // Home-page CTA card ("Available for inquiries" / book-a-call section)
+    cta: {
+      available: true,
+      status: "Available for inquiries",
+      heading: "Great apps don't build themselves.",
+      subtext:
+        "In 15 minutes, I'll pinpoint the things standing between your product and its first users.",
+      calendarUrl: "https://cal.com/najmulmyself", // replace with your real booking link
+      calendarLabel: "Book a free 15-min call",
+      image: "/me.jpg",
+    },
   },
   worksummary:
     "On a mission to build products developers love, I'm dedicated to crafting tools that empower and inspire the dev community. With a focus on innovation and user experience, my journey has been about creating solutions that not only meet the needs of today but also set the stage for the future. Here's a comprehensive summary of my work so far, reflecting the passion and precision that drive me forward.",

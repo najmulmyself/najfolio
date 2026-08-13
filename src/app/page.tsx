@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Markdown from 'react-markdown';
 import GitHubInfo from '@/components/githubinfo';
 import TweetList from '@/components/tweetlist';
+import CTA from '@/components/cta';
 
 function Badge(props: any) {
   return (
@@ -266,7 +267,9 @@ export default function Page() {
             {DATA.footer}
         </Markdown>
       </div>
-      
+
+      <CTA />
+
     </section>
   );
 }
