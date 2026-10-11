@@ -8,15 +8,15 @@ import {
 } from "lucide-react";
 export const DATA = {
   name: "Najmul Huda",
-  url: "https://eldoraui.site/xyzabc",
+  url: "https://najfolio.vercel.app",
   description:
-    "I'm a Mobile Application Developer, mostly with Flutter and Kotlin.At the same time, I’m exploring backend with Go and brushing up on computer science fundamentals.",
+    "I'm a Mobile Application Developer, mostly with Flutter and Kotlin. At the same time, I’m exploring backend with Go and brushing up on computer science fundamentals.",
   description2:
     " Honestly, I don’t just want to build apps anymore. I want to understand the whole stack. From UI design to system internals, I’m chasing the bigger picture so I can grow into a well-rounded software engineer, not just someone who plugs code into a screen.",
   description3: "",
   summary:
-    "In 2023, I started focusing entirely on building innovative web applications and open-source projects like [Flutter UI](https://eldoraui.site/), after honing my skills through extensive hands-on experience in Full Stack Development. [I'm persing my BTech in Artificial Intelligence at Woxsen University](https://woxsen.edu.in/), where I also gained practical experience through internships at cutting-edge tech companies. Throughout my journey, I've had the opportunity to explore emerging technologies, compete in hackathons, and contribute to collaborative projects. I'm passionate about crafting high-quality, efficient solutions that push the boundaries of web development.",
-  apperciation:
+    "I'm a Software Engineer at Gold Kinen Technologies, where I've been building and maintaining applications since January 2024. Before that, I spent nearly two years at Arbree Solutions Ltd., implementing new features, optimizing existing code, and integrating systems. I studied Geography and Environmental Science at [Dhaka College](https://www.dhakacollege.edu.bd/en), and today I build mobile apps with Flutter and Kotlin while exploring backend development with Go.",
+  appreciation:
     "Take a moment to explore the recognition I've garnered within the Twitter community for my work on [Eldora UI](https://eldoraui.site/). The positive feedback and appreciation from fellow developers and enthusiasts highlight the impact and value of the [EldoraUI](https://eldoraui.site/) project. It's rewarding to see the project being acknowledged and celebrated within the broader tech community!",
   footer:
     "Interested in learning more about my professional journey and skill set? [Click here to view my resume](/Najmul_Huda_Resume.pdf) and discover the experiences, achievements, and expertise that I bring to the table.",
@@ -50,7 +50,7 @@ export const DATA = {
       href: "/firstday.jpeg",
     },
     {
-      title: "our sumit at woxsen for discussing ideas",
+      title: "Me standing outside a white heritage building",
       href: "/me3.jpg",
     },
     {
@@ -211,17 +211,6 @@ export const DATA = {
     },
     {
       id: 3,
-      company: "Gold Kinen Technologies",
-      href: "https://goldkinen.com/",
-      title: "React Developer Intern",
-      logoUrl: "/articus.jpeg",
-      start: "Jan 2024",
-      end: "July 2024",
-      description:
-        "Spearheading the development of frontend applications using **React** and **Next.js**, with a focus on **Tailwind CSS** and **TypeScript** to create responsive and high-performance user interfaces.Deployed **RESTful APIs** to enable instantaneous data updates and retrieval for dynamic web applications, leading to a 30% boost in user satisfaction and a 20% reduction in server load time.Collaborated closely with designers and backend developers to seamlessly integrate APIs and develop data-driven features, enhancing the functionality and user experience of the application.",
-    },
-    {
-      id: 4,
       company: "AI Research center - woxsen university",
       badges: [],
       href: "https://aircwou.in/",
@@ -275,11 +264,11 @@ export const DATA = {
     },
     {
       title: "Portfolio Template",
-      href: "karthikeyavarmamudunuri.vercel.app/",
+      href: "https://karthikeyavarmamudunuri.vercel.app/",
       dates: "June 2024 - July 2024",
       active: true,
       description:
-        "Minimalist [developer portfolio](karthikeyavarmamudunuri.vercel.app/) using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
+        "Minimalist [developer portfolio](https://karthikeyavarmamudunuri.vercel.app/) using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
       iconLists: [
         "/next-logo.svg",
         "/tailwindcss.svg",
@@ -290,7 +279,7 @@ export const DATA = {
       links: [
         {
           type: "visit Website",
-          href: "karthikeyavarmamudunuri.vercel.app/",
+          href: "https://karthikeyavarmamudunuri.vercel.app/",
           icon: <SquareTerminal className="size-3" />,
         },
       ],
@@ -387,11 +376,11 @@ export const DATA = {
   hackathons: [
     {
       id: 1,
-      title: "AI Expo 2025",
+      title: "AI Expo 2024",
       dates: "10th April 2024",
       location: "Hyderabad, India",
       description:
-        "We have recieved second price in the hackathon [AI Expo](https://www.linkedin.com/feed/update/urn:li:activity:7051137569832517632?utm_source=share&utm_medium=member_desktop) where we created 2d to 3d project using AI and machine learning.and we have also created face emotion detection for this using python.",
+        "We received second prize in the hackathon [AI Expo](https://www.linkedin.com/feed/update/urn:li:activity:7051137569832517632?utm_source=share&utm_medium=member_desktop) where we created 2d to 3d project using AI and machine learning, and we also built face emotion detection for it using Python.",
       logo: "/airc.png",
       images: "/hackathonaiexpo.jpeg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",

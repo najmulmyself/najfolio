@@ -255,7 +255,7 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
       <Markdown className="prose max-w-full prose-neutral  text-muted-foreground dark:prose-invert">
-            {DATA.apperciation}
+            {DATA.appreciation}
         </Markdown>
       </div>
       <div className="my-8 flex w-full flex-col space-y-4">
