@@ -1,0 +1,30 @@
+---
+title: "Refactoring a Production Flutter App to BLoC and Clean Architecture"
+publishedAt: '2025-03-15'
+summary: 'Placeholder post: lessons from moving a live fintech app to BLoC, Clean Architecture, and TDD.'
+---
+
+> This is a placeholder post. Replace it with your own write-up.
+
+When a Flutter codebase grows feature by feature, state ends up scattered across widgets and business rules leak into the UI. This post walks through how we split a production app into **presentation**, **domain**, and **data** layers.
+
+## Why BLoC
+
+- Predictable, event-driven state that is easy to test
+- A clear boundary between UI and business logic
+- Works well with `get_it` for dependency injection
+
+## A minimal use case
+
+```dart
+class GetBalance {
+  GetBalance(this._repository);
+  final WalletRepository _repository;
+
+  Future<Either<Failure, Balance>> call() => _repository.getBalance();
+}
+```
+
+## What's next
+
+In a follow-up post I'll cover how we reached 80%+ test coverage with TDD.

@@ -16,8 +16,11 @@ export const DATA = {
   description3: "",
   summary:
     "I'm a Software Engineer at Gold Kinen Technologies, where I've been building and maintaining applications since January 2024. Before that, I spent nearly two years at Arbree Solutions Ltd., implementing new features, optimizing existing code, and integrating systems. I studied Geography and Environmental Science at [Dhaka College](https://www.dhakacollege.edu.bd/en), and today I build mobile apps with Flutter and Kotlin while exploring backend development with Go.",
+  // Placeholder: shown only when `tweets` below has IDs.
   appreciation:
-    "Take a moment to explore the recognition I've garnered within the Twitter community for my work on [Eldora UI](https://eldoraui.site/). The positive feedback and appreciation from fellow developers and enthusiasts highlight the impact and value of the [EldoraUI](https://eldoraui.site/) project. It's rewarding to see the project being acknowledged and celebrated within the broader tech community!",
+    "Here's what people have been saying about my work. Kind words from colleagues, clients, and fellow developers keep me motivated to keep shipping better apps.",
+  // Placeholder: add tweet IDs about your work (e.g. "1815138485440803034").
+  tweets: [] as string[],
   footer:
     "Interested in learning more about my professional journey and skill set? [Click here to view my resume](/Najmul_Huda_Resume.pdf) and discover the experiences, achievements, and expertise that I bring to the table.",
   linkedin: [
@@ -36,30 +39,31 @@ export const DATA = {
       profile: "/me.jpg",
     },
   ],
+  // Placeholder photos live in /public/placeholders. Swap them for your own.
   images: [
     {
-      title: "aiexpo",
-      href: "/aiexpo.jpeg",
+      title: "Placeholder photo",
+      href: "/placeholders/photo-1.svg",
     },
     {
-      title: "Me",
+      title: "Najmul Huda",
       href: "/me.jpg",
     },
     {
-      title: "My first day at my office during internship",
-      href: "/firstday.jpeg",
+      title: "Placeholder photo",
+      href: "/placeholders/photo-2.svg",
     },
     {
-      title: "Me standing outside a white heritage building",
+      title: "Najmul Huda standing outside a white heritage building",
       href: "/me3.jpg",
     },
     {
-      title: "while exploring",
+      title: "Najmul Huda",
       href: "/me2.jpg",
     },
     {
-      title: "My working stuff",
-      href: "/work.jpeg",
+      title: "Placeholder photo",
+      href: "/placeholders/photo-3.svg",
     },
   ],
   Iconsvg: [
@@ -90,74 +94,74 @@ export const DATA = {
       id: 1,
       title: "Flutter",
       href: "/flutter.svg",
-      site: "https://nextjs.org",
+      site: "https://flutter.dev",
     },
     {
       id: 2,
       title: "Kotlin",
       href: "/kotlin.svg",
-      site: "https://react.dev",
+      site: "https://kotlinlang.org",
     },
     {
       id: 3,
       title: "Golang",
       href: "/go.svg",
-      site: "https://react.dev",
+      site: "https://go.dev",
     },
     {
       id: 4,
       title: "C++",
       href: "/cpp.svg",
-      site: "https://react.dev",
+      site: "https://isocpp.org",
     },
     {
       id: 12,
       title: "Python",
       href: "/python.svg",
-      site: "https://react.dev",
+      site: "https://www.python.org",
     },
     {
       id: 5,
       title: "BLoC",
-      href: "/mdxl.svg",
-      site: "https://react.dev",
+      href: "/placeholders/icon.svg",
+      site: "https://bloclibrary.dev",
     },
     {
       id: 6,
       title: "Riverpod",
-      href: "/tailwindcss.svg",
-      site: "https://react.dev",
+      href: "/placeholders/icon.svg",
+      site: "https://riverpod.dev",
     },
     {
       id: 7,
       title: "Git",
       href: "/git.svg",
-      site: "https://react.dev",
+      site: "https://git-scm.com",
     },
     {
       id: 8,
       title: "AWS",
       href: "/aws.svg",
-      site: "https://react.dev",
+      site: "https://aws.amazon.com",
     },
 
     {
       id: 9,
       title: "Firebase",
       href: "/firebase.svg",
-      site: "https://react.dev",
+      site: "https://firebase.google.com",
     },
     {
       id: 10,
       title: "Supabase",
-      href: "/php-color.svg",
-      site: "https://react.dev",
+      href: "/placeholders/icon.svg",
+      site: "https://supabase.com",
     },
     {
       id: 11,
       title: "MySQL",
       href: "/mysql.svg",
-      site: "https://react.dev",
+      site: "https://www.mysql.com",
     },
 
     // Import your teck stack here from https://simpleicons.org/
@@ -185,41 +189,29 @@ export const DATA = {
     },
   },
   worksummary:
-    "On a mission to build products developers love, I'm dedicated to crafting tools that empower and inspire the dev community. With a focus on innovation and user experience, my journey has been about creating solutions that not only meet the needs of today but also set the stage for the future. Here's a comprehensive summary of my work so far, reflecting the passion and precision that drive me forward.",
+    "I've spent the last few years building and shipping Flutter apps used by real people: fintech, government compliance, and hospitality products. I care about clean architecture, test coverage, and owning the full release cycle from internal QA to the Play Store and App Store.",
   work: [
     {
       id: 1,
-      company: "Gold Kinen Technologies",
-      href: "#",
+      company: "Gold Kinen",
+      href: "https://play.google.com/store/apps/details?id=com.goldkinen.android",
       title: "Software Engineer",
       logoUrl: "",
       start: "Jan 2024",
       end: "Present",
       description:
-        "Working as a Software Engineer, contributing to various software development projects. Responsible for designing, developing, and maintaining scalable applications while collaborating with cross-functional teams to deliver high-quality solutions.",
+        "Refactored the core **Gold Kinen** app using **BLoC** and **Clean Architecture**, improving modularity, testability, and scalability across features, and introduced **Remote Config** for feature flagging and controlled rollouts. Implemented Auto-Save with the **bKash API** for automated recurring transactions, applying **TDD** with 80%+ test coverage. Managed the full app lifecycle: internal QA via **Firebase App Distribution**, live Play Store and App Store deployments, and real-time issue tracking via **Crashlytics**.",
     },
     {
       id: 2,
-      company: "Arbree Solutions Ltd.",
+      company: "Arbree Solutions",
       href: "#",
       title: "Software Engineer",
       logoUrl: "",
-      start: "March 2022",
+      start: "Apr 2022",
       end: "Dec 2023",
       description:
-        "Contributed to the development and maintenance of software solutions. Worked on implementing new features, optimizing existing code, and ensuring seamless integration across different systems.",
-    },
-    {
-      id: 3,
-      company: "AI Research center - woxsen university",
-      badges: [],
-      href: "https://aircwou.in/",
-      title: "Web developer Intern",
-      logoUrl: "/airc.png",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Led the development of the AI Research Centre website using WordPress, crafting custom themes and plugins to precisely meet client specifications and enhance site functionality. Optimized website performance through the implementation of best practices in responsive design, SEO, and speed optimization, resulting in faster load times and improved user experience. Collaborated with cross-functional teams, including designers and content creators, to deliver high-quality, fully functional websites on time and within scope. Developed a cutting-edge Virtual Mall project using Three.js and TypeScript, creating an immersive 3D shopping experience. [Demo Link](#) and the main [Live Link to the AI Research Centre website](https://aircwou.in)",
+        "Built **NBR - EFDMS**, a government VAT management system integrating Electronic Fiscal Devices, with multi-role authentication, **Fernet**-encrypted API communication, offline-first syncing via **SQFLite**, automated VAT calculation, and PDF generation. Also built [Stayverz](https://play.google.com/store/apps/details?id=com.stayverz.stayverz), a hotel booking app with **Provider**, real-time booking flows, a secure payment gateway, and push notifications for booking updates.",
     },
   ],
   educationsummary:
@@ -236,154 +228,115 @@ export const DATA = {
     },
   ],
   projectssummary:
-    "Explore my projects where ideas meet execution. Each project showcases my dedication to crafting impactful digital experiences, turning concepts into reality.",
+    "A selection of apps I've built and shipped, from production fintech work to a side project that grew to 100k+ downloads.",
   projects: [
     {
-      title: "Eldora UI",
-      href: "https://eldoraui.site/",
-      dates: "June 2024 - present",
+      title: "Gold Kinen",
+      href: "https://play.google.com/store/apps/details?id=com.goldkinen.android",
+      dates: "Jan 2024 - present",
       active: true,
       description:
-        "Collection of [re-usable components](https://eldoraui.site/components) that you can copy and paste into your web apps. It primarily features [components, blocks](https://eldoraui.site/components), and [templates](https://eldoraui.site/templates).",
-      iconLists: [
-        "/next-logo.svg",
-        "/tailwindcss.svg",
-        "/typescript.svg",
-        "/fm.svg",
-        "/mdxl.svg",
-      ],
+        "Digital gold savings app. Rebuilt on **BLoC** and **Clean Architecture**, with bKash-powered Auto-Save for recurring purchases and 80%+ test coverage.",
+      iconLists: ["/flutter.svg", "/firebase.svg", "/git.svg"],
       links: [
         {
-          type: "visit website",
-          href: "https://eldoraui.site/",
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=com.goldkinen.android",
           icon: <SquareTerminal className="size-3" />,
         },
       ],
       image: "",
-      video: "https://eldoraui.site/previews/components/core/eldoraui.mp4",
-    },
-    {
-      title: "Portfolio Template",
-      href: "https://karthikeyavarmamudunuri.vercel.app/",
-      dates: "June 2024 - July 2024",
-      active: true,
-      description:
-        "Minimalist [developer portfolio](https://karthikeyavarmamudunuri.vercel.app/) using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
-      iconLists: [
-        "/next-logo.svg",
-        "/tailwindcss.svg",
-        "/typescript.svg",
-        "/eldoraui.svg",
-        "/fm.svg",
-      ],
-      links: [
-        {
-          type: "visit Website",
-          href: "https://karthikeyavarmamudunuri.vercel.app/",
-          icon: <SquareTerminal className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://eldoraui.site/previews/components/core/portfolio.mp4",
-    },
-    {
-      title: "Saas Template",
-      href: "https://saas-landing-page-template-eldoraui.vercel.app/",
-      dates: "July 2024 - August 2024",
-      active: true,
-      description:
-        "Template for [saas landing page](https://saas-landing-page-template-eldoraui.vercel.app/) with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
-      iconLists: [
-        "/next-logo.svg",
-        "/tailwindcss.svg",
-        "/typescript.svg",
-        "/eldoraui.svg",
-        "/fm.svg",
-      ],
-      links: [
-        {
-          type: "visit Website",
-          href: "https://saas-landing-page-template-eldoraui.vercel.app/",
-          icon: <SquareTerminal className="size-3" />,
-        },
-      ],
-      image: "https://eldoraui.site/previews/components/core/saas.png",
       video: "",
     },
     {
-      title: "VR Mall",
-      href: "https://vrmalldemo.netlify.app/",
-      dates: "April 2023 - May 2023",
+      title: "Dream Kit 25",
+      href: "https://play.google.com/store/apps/details?id=com.sakib.dreamkit",
+      dates: "Personal project",
       active: true,
       description:
-        "A [virtual mall](https://vrmalldemo.netlify.app/) created using three.js and react with user interaction.",
-      iconLists: [
-        "/next-logo.svg",
-        "/threejs.svg",
-        "tailwindcss.svg",
-        "/typescript.svg",
-        "/gsap.svg",
-      ],
+        "A DLS kit app I built and scaled solo to **100k+ downloads** and $120+/month revenue, with offline caching, AdMob and Unity Ads monetization, and push notifications.",
+      iconLists: ["/flutter.svg", "/firebase.svg"],
       links: [
         {
-          type: "visit Website",
-          href: "https://vrmalldemo.netlify.app/",
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=com.sakib.dreamkit",
           icon: <SquareTerminal className="size-3" />,
         },
       ],
       image: "",
-      video: "/vrmall.mp4",
+      video: "",
+    },
+    {
+      title: "Skill Finesse",
+      href: "https://apps.apple.com/us/app/skill-finesse/id6477940594",
+      dates: "Notable project",
+      active: true,
+      description:
+        "A cross-platform LMS app with a modular architecture, push notifications, and full release handling for both the App Store and Play Store.",
+      iconLists: ["/flutter.svg", "/firebase.svg"],
+      links: [
+        {
+          type: "App Store",
+          href: "https://apps.apple.com/us/app/skill-finesse/id6477940594",
+          icon: <SquareTerminal className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Stayverz",
+      href: "https://play.google.com/store/apps/details?id=com.stayverz.stayverz",
+      dates: "Arbree Solutions",
+      active: true,
+      description:
+        "Hotel booking app with **Provider** state management, real-time booking flows, WebView, a secure payment gateway, and push notifications for bookings and offers.",
+      iconLists: ["/flutter.svg", "/firebase.svg"],
+      links: [
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=com.stayverz.stayverz",
+          icon: <SquareTerminal className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
     },
   ],
   contributionssummary:
-    "Committing Code and Crimes Against Open Source World A place where you can witness my caffeinated coding adventures and see just how much coffee it takes to fuel my commits. from my first `Hello World` to my latest breakthrough, and everything in between",
+    "Open-source work and side repositories I maintain on [GitHub](https://github.com/najmulmyself).",
+  // Placeholder: replace with your real repositories, stars, and forks.
   contributions: [
     {
-      link: "https://github.com/karthikmudunuri/eldoraui",
-      title: "eldora ui",
+      link: "https://github.com/najmulmyself",
+      title: "flutter-clean-architecture-starter",
       description:
-        "Eldora UI is a collection of re-usable components that you can copy and paste into your web apps. It primarily features components, blocks, and templates.",
-      stars: "847",
-      forks: "29",
+        "Starter template for Flutter apps using BLoC, Clean Architecture, get_it, and a TDD-friendly folder structure.",
+      stars: "0",
+      forks: "0",
     },
     {
-      link: "https://github.com/karthikmudunuri/saas-landing-page-template",
-      title: "saas-landing-page-template",
+      link: "https://github.com/najmulmyself",
+      title: "najfolio",
       description:
-        "Template for saas landing page with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
-      stars: "59",
-      forks: "13",
-    },
-    {
-      link: "https://github.com/karthikmudunuri/portfolio-template",
-      title: "portfolio-template",
-      description:
-        "Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
-      stars: "35",
-      forks: "18",
-    },
-    {
-      link: "https://github.com/shuding/nextra",
-      title: "nextra",
-      description:
-        "Simple, powerful and flexible site generation framework with everything you love from Next.js.",
-      stars: "11.2k",
-      forks: "1.2k",
+        "This portfolio, built with Next.js, React, TailwindCSS, and Framer Motion.",
+      stars: "0",
+      forks: "0",
     },
   ],
+  // Placeholder: replace with your real hackathons, or remove the section.
   hackathonsummary:
-    "I like building things During my time in university, I attended [hackathons](/about). People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
+    "Events, hackathons, and meetups where I've built things with other developers.",
   hackathons: [
     {
       id: 1,
-      title: "AI Expo 2024",
-      dates: "10th April 2024",
-      location: "Hyderabad, India",
+      title: "Hackathon name",
+      dates: "Month Year",
+      location: "Dhaka, Bangladesh",
       description:
-        "We received second prize in the hackathon [AI Expo](https://www.linkedin.com/feed/update/urn:li:activity:7051137569832517632?utm_source=share&utm_medium=member_desktop) where we created 2d to 3d project using AI and machine learning, and we also built face emotion detection for it using Python.",
-      logo: "/airc.png",
-      images: "/hackathonaiexpo.jpeg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+        "Short description of what you built, the stack you used, and the result.",
+      logo: "",
+      images: "",
       links: [],
     },
   ],

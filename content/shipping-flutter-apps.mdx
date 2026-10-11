@@ -1,0 +1,20 @@
+---
+title: "From Internal QA to the App Store: How I Ship Flutter Apps"
+publishedAt: '2025-01-20'
+summary: 'Placeholder post: a release checklist covering Firebase App Distribution, Remote Config, and Crashlytics.'
+---
+
+> This is a placeholder post. Replace it with your own write-up.
+
+Shipping is more than running `flutter build`. Here's the checklist I follow for every release.
+
+1. **Internal QA** with Firebase App Distribution
+2. **Feature flags** with Remote Config for controlled rollouts
+3. **Store submission** for the Play Store and App Store
+4. **Monitoring** with Crashlytics after release
+
+```bash
+flutter build appbundle --release
+```
+
+Each step catches a different class of problem before your users do.

@@ -18,13 +18,6 @@ function Badge(props: any) {
   );
 }
 
-// async function Stars() {
-//   let res = await fetch('https://api.github.com/repos/karthikmudunuri/eldoraui');
-//   let json = await res.json();
-//   let count = Math.round(json.stargazers_count / 1000);
-//   return `${count}k stars`;
-// }
-
 export default function AboutPage() {
   return (
     <section>

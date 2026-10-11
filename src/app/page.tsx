@@ -253,14 +253,18 @@ export default function Page() {
           link={DATA.github[0].href}                 
           />
       </div>
-      <div className="prose prose-neutral dark:prose-invert">
-      <Markdown className="prose max-w-full prose-neutral  text-muted-foreground dark:prose-invert">
-            {DATA.appreciation}
-        </Markdown>
-      </div>
-      <div className="my-8 flex w-full flex-col space-y-4">
-      <TweetList/>
-      </div>
+      {DATA.tweets.length > 0 && (
+        <>
+          <div className="prose prose-neutral dark:prose-invert">
+          <Markdown className="prose max-w-full prose-neutral  text-muted-foreground dark:prose-invert">
+                {DATA.appreciation}
+            </Markdown>
+          </div>
+          <div className="my-8 flex w-full flex-col space-y-4">
+          <TweetList/>
+          </div>
+        </>
+      )}
       <div className="prose prose-neutral dark:prose-invert">
       <Markdown className="prose max-w-full prose-neutral  text-muted-foreground dark:prose-invert">
             {DATA.footer}
