@@ -1,111 +1,72 @@
-import { HoverEffect } from '@/components/contributions-card';
-import { ProjectCard } from '@/components/project-card';
-import Image from 'next/image';
-import { DATA } from '@/data';
-import type { Metadata } from 'next';
-import Markdown from 'react-markdown';
+import { HoverEffect } from "@/components/contributions-card";
+import { ProjectCard } from "@/components/portfolio/project-card";
+import { Section } from "@/components/portfolio/section";
+import { DATA } from "@/data";
+import { PROJECTS } from "@/data/projects";
+import type { Metadata } from "next";
+import Image from "next/image";
+import Markdown from "react-markdown";
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'A summary of my Projects and open-source contributions.',
+  title: "Projects",
+  description: "Mobile apps I've built and shipped, with case studies.",
 };
 
 export default function ProjectsPage() {
   return (
-    <section>
-         
-        <div className='mb-5'>
-          <h2 className="font-medium text-2xl mb-8 tracking-tighter">my projects</h2>
-          <div className="prose prose-neutral dark:prose-invert mb-4">
-          <Markdown className="prose prose-neutral dark:prose-invert">
-          {DATA.projectssummary}
-        </Markdown>
+    <div className="space-y-24">
+      <Section
+        title="Projects"
+        description="Apps I've built and shipped across iOS and Android. Open a case study to see the problem, the architecture and the results."
+      >
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {PROJECTS.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
         </div>
-        
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <div
-                key={project.title}
-               
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  iconLists={project.iconLists}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
+      </Section>
+
+      <Section title="Open source" className="mx-auto max-w-3xl">
+        <Markdown className="prose prose-neutral dark:prose-invert">{DATA.contributionssummary}</Markdown>
+        <HoverEffect items={DATA.contributions} />
+      </Section>
+
+      <Section title="Hackathons" className="mx-auto max-w-3xl">
+        <Markdown className="prose prose-neutral dark:prose-invert">{DATA.hackathonsummary}</Markdown>
+        <div className="mt-8 space-y-6">
+          {DATA.hackathons.map((hackathon) => (
+            <div key={hackathon.id} className="flex items-start gap-4">
+              {hackathon.logo && (
+                <Image
+                  src={hackathon.logo}
+                  alt={hackathon.title}
+                  height={64}
+                  width={64}
+                  className="rounded-full border object-contain"
                 />
+              )}
+              <div>
+                <h3 className="font-semibold">{hackathon.title}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {hackathon.dates}, {hackathon.location}
+                </p>
+                {hackathon.images && (
+                  <Image
+                    src={hackathon.images}
+                    alt={hackathon.title}
+                    height={200}
+                    width={600}
+                    className="mt-3 rounded-xl border"
+                  />
+                )}
+                <Markdown className="prose prose-neutral mt-2 text-sm dark:prose-invert">
+                  {hackathon.description}
+                </Markdown>
               </div>
-            ))}
-          </div>
-          <div className='mb-5 mt-12'>
-          <h2 className="font-medium text-2xl mb-8 tracking-tighter">my contributions to open source world</h2>
-          <div className="prose prose-neutral dark:prose-invert mb-4">
-          <Markdown className="prose prose-neutral dark:prose-invert">
-          {DATA.contributionssummary}
-        </Markdown>
-        </div>
-
-          <HoverEffect items={DATA.contributions} />
-        </div>
-
-        <h1 className="font-medium text-2xl mt-16 mb-8 tracking-tighter">Hackathons</h1>
-      <div className="prose prose-neutral dark:prose-invert">
-      <Markdown className="prose prose-neutral dark:prose-invert">
-          {DATA.hackathonsummary}
-        </Markdown>
-
-        {DATA.hackathons.map((hackathons, id) => (
-          <div key={hackathons.id} className="flex items-start mb-6">
-          
-            {hackathons?.logo && (
-              <Image
-                src={hackathons.logo}
-                alt={hackathons.title}
-                height="80"
-                width="80"
-                className="rounded-full border-2 bg-white dark:bg-black dark:border-black border-white object-contain overflow-hidden aspect-square "
-              />
-            )}
-            
-            <div className="ml-4">
-              <h2 className="font-medium text-xl mb-1 tracking-tighter">{hackathons.title}</h2>
-            
-              <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-                {hackathons.dates}, {hackathons.location}
-              </p>
-              <hr className="my-3 border-neutral-100 dark:border-neutral-800" />
-              
-             
-              <div className='grid grid-cols-1 gap-3 sm:grid-cols-1 max-w-[800px] mx-auto'>
-              {hackathons?.images && (
-              <Image
-                src={hackathons.images}
-                alt={hackathons.title}
-                height="200"
-                width="600"
-                className=" border-2 bg-white dark:bg-black dark:border-black border-white object-contain overflow-hidden  "
-              />
-            )}
             </div>
-            <Markdown className="prose prose-neutral dark:prose-invert mt-1">
-                {hackathons.description}
-              </Markdown>
-             
-            </div>
-           
-           
-          </div>
-          
-        ))}
-      </div>
-          
+          ))}
         </div>
-        
-    </section>
+      </Section>
+    </div>
   );
 }

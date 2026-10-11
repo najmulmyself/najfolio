@@ -3,7 +3,6 @@ import {
   Code,
   HomeIcon,
   NotebookPen,
-  SquareTerminal,
   UserRound,
 } from "lucide-react";
 export const DATA = {
@@ -188,32 +187,6 @@ export const DATA = {
       },
     },
   },
-  worksummary:
-    "I've spent the last few years building and shipping Flutter apps used by real people: fintech, government compliance, and hospitality products. I care about clean architecture, test coverage, and owning the full release cycle from internal QA to the Play Store and App Store.",
-  work: [
-    {
-      id: 1,
-      company: "Gold Kinen",
-      href: "https://play.google.com/store/apps/details?id=com.goldkinen.android",
-      title: "Software Engineer",
-      logoUrl: "",
-      start: "Jan 2024",
-      end: "Present",
-      description:
-        "Refactored the core **Gold Kinen** app using **BLoC** and **Clean Architecture**, improving modularity, testability, and scalability across features, and introduced **Remote Config** for feature flagging and controlled rollouts. Implemented Auto-Save with the **bKash API** for automated recurring transactions, applying **TDD** with 80%+ test coverage. Managed the full app lifecycle: internal QA via **Firebase App Distribution**, live Play Store and App Store deployments, and real-time issue tracking via **Crashlytics**.",
-    },
-    {
-      id: 2,
-      company: "Arbree Solutions",
-      href: "#",
-      title: "Software Engineer",
-      logoUrl: "",
-      start: "Apr 2022",
-      end: "Dec 2023",
-      description:
-        "Built **NBR - EFDMS**, a government VAT management system integrating Electronic Fiscal Devices, with multi-role authentication, **Fernet**-encrypted API communication, offline-first syncing via **SQFLite**, automated VAT calculation, and PDF generation. Also built [Stayverz](https://play.google.com/store/apps/details?id=com.stayverz.stayverz), a hotel booking app with **Provider**, real-time booking flows, a secure payment gateway, and push notifications for booking updates.",
-    },
-  ],
   educationsummary:
     "My education has been a journey of exploration and growth, equipping me with a strong foundation in technology and problem-solving. From mastering core concepts to embracing cutting-edge advancements, each step has shaped my ability to innovate and contribute meaningfully to the tech landscape.",
   education: [
@@ -225,82 +198,6 @@ export const DATA = {
       logoUrl: "/dc.png",
       start: "2018",
       end: "2024",
-    },
-  ],
-  projectssummary:
-    "A selection of apps I've built and shipped, from production fintech work to a side project that grew to 100k+ downloads.",
-  projects: [
-    {
-      title: "Gold Kinen",
-      href: "https://play.google.com/store/apps/details?id=com.goldkinen.android",
-      dates: "Jan 2024 - present",
-      active: true,
-      description:
-        "Digital gold savings app. Rebuilt on **BLoC** and **Clean Architecture**, with bKash-powered Auto-Save for recurring purchases and 80%+ test coverage.",
-      iconLists: ["/flutter.svg", "/firebase.svg", "/git.svg"],
-      links: [
-        {
-          type: "Play Store",
-          href: "https://play.google.com/store/apps/details?id=com.goldkinen.android",
-          icon: <SquareTerminal className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Dream Kit 25",
-      href: "https://play.google.com/store/apps/details?id=com.sakib.dreamkit",
-      dates: "Personal project",
-      active: true,
-      description:
-        "A DLS kit app I built and scaled solo to **100k+ downloads** and $120+/month revenue, with offline caching, AdMob and Unity Ads monetization, and push notifications.",
-      iconLists: ["/flutter.svg", "/firebase.svg"],
-      links: [
-        {
-          type: "Play Store",
-          href: "https://play.google.com/store/apps/details?id=com.sakib.dreamkit",
-          icon: <SquareTerminal className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Skill Finesse",
-      href: "https://apps.apple.com/us/app/skill-finesse/id6477940594",
-      dates: "Notable project",
-      active: true,
-      description:
-        "A cross-platform LMS app with a modular architecture, push notifications, and full release handling for both the App Store and Play Store.",
-      iconLists: ["/flutter.svg", "/firebase.svg"],
-      links: [
-        {
-          type: "App Store",
-          href: "https://apps.apple.com/us/app/skill-finesse/id6477940594",
-          icon: <SquareTerminal className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Stayverz",
-      href: "https://play.google.com/store/apps/details?id=com.stayverz.stayverz",
-      dates: "Arbree Solutions",
-      active: true,
-      description:
-        "Hotel booking app with **Provider** state management, real-time booking flows, WebView, a secure payment gateway, and push notifications for bookings and offers.",
-      iconLists: ["/flutter.svg", "/firebase.svg"],
-      links: [
-        {
-          type: "Play Store",
-          href: "https://play.google.com/store/apps/details?id=com.stayverz.stayverz",
-          icon: <SquareTerminal className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
     },
   ],
   contributionssummary:

@@ -10,7 +10,7 @@ export default async function BlogPage() {
   const posts = await getBlogPosts();
 
   return (
-    <section>
+    <section className="mx-auto max-w-2xl">
       <div>
         <h1 className="font-medium text-2xl mb-8 tracking-tighter">Read my blog</h1>
       </div>
