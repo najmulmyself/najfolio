@@ -1,23 +1,34 @@
 import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function Section({
   id,
   title,
-  description,
+  link,
   className,
   children,
 }: {
   id?: string;
   title: string;
-  description?: string;
+  link?: { href: string; label: string };
   className?: string;
   children: React.ReactNode;
 }) {
   return (
     <section id={id} className={cn("scroll-mt-24", className)}>
-      <h2 className="text-2xl font-semibold tracking-tighter sm:text-3xl">{title}</h2>
-      {description && <p className="mt-2 max-w-2xl text-muted-foreground">{description}</p>}
-      <div className="mt-8">{children}</div>
+      <div className="mb-4 flex items-baseline justify-between gap-4">
+        <h2 className="text-sm font-medium text-muted-foreground">{title}</h2>
+        {link && (
+          <Link
+            href={link.href}
+            className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {link.label} <ArrowRight className="size-3.5" />
+          </Link>
+        )}
+      </div>
+      {children}
     </section>
   );
 }

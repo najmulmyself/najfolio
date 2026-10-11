@@ -1,10 +1,9 @@
-import { HoverEffect } from "@/components/contributions-card";
-import { ProjectCard } from "@/components/portfolio/project-card";
+import { ProjectList } from "@/components/portfolio/project-row";
 import { Section } from "@/components/portfolio/section";
 import { DATA } from "@/data";
 import { PROJECTS } from "@/data/projects";
+import { ArrowUpRight, Star } from "lucide-react";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Markdown from "react-markdown";
 
 export const metadata: Metadata = {
@@ -14,58 +13,58 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="space-y-24">
-      <Section
-        title="Projects"
-        description="Apps I've built and shipped across iOS and Android. Open a case study to see the problem, the architecture and the results."
-      >
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {PROJECTS.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+    <div className="space-y-16">
+      <header>
+        <h1 className="text-3xl font-semibold tracking-tighter">Projects</h1>
+        <p className="mt-3 text-muted-foreground">
+          Apps I&apos;ve built and shipped. Each one links to a short case study: the problem, how I built
+          it and what came out of it.
+        </p>
+      </header>
+
+      <Section title="Apps">
+        <ProjectList projects={PROJECTS} />
+      </Section>
+
+      <Section title="Open source">
+        <ul className="space-y-1">
+          {DATA.contributions.map((repo) => (
+            <li key={repo.title}>
+              <a
+                href={repo.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group -mx-3 flex items-center gap-4 rounded-2xl p-3 transition-colors hover:bg-muted/60"
+              >
+                <div className="min-w-0 flex-1">
+                  <p className="font-medium leading-tight">{repo.title}</p>
+                  <p className="mt-0.5 truncate text-sm text-muted-foreground">{repo.description}</p>
+                </div>
+                <span className="inline-flex shrink-0 items-center gap-1 text-sm tabular-nums text-muted-foreground">
+                  <Star className="size-3.5" /> {repo.stars}
+                </span>
+                <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:-rotate-12 group-hover:text-foreground" />
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </Section>
 
-      <Section title="Open source" className="mx-auto max-w-3xl">
-        <Markdown className="prose prose-neutral dark:prose-invert">{DATA.contributionssummary}</Markdown>
-        <HoverEffect items={DATA.contributions} />
-      </Section>
-
-      <Section title="Hackathons" className="mx-auto max-w-3xl">
-        <Markdown className="prose prose-neutral dark:prose-invert">{DATA.hackathonsummary}</Markdown>
-        <div className="mt-8 space-y-6">
+      <Section title="Hackathons">
+        <ul className="space-y-6">
           {DATA.hackathons.map((hackathon) => (
-            <div key={hackathon.id} className="flex items-start gap-4">
-              {hackathon.logo && (
-                <Image
-                  src={hackathon.logo}
-                  alt={hackathon.title}
-                  height={64}
-                  width={64}
-                  className="rounded-full border object-contain"
-                />
-              )}
-              <div>
-                <h3 className="font-semibold">{hackathon.title}</h3>
-                <p className="text-sm text-muted-foreground">
-                  {hackathon.dates}, {hackathon.location}
-                </p>
-                {hackathon.images && (
-                  <Image
-                    src={hackathon.images}
-                    alt={hackathon.title}
-                    height={200}
-                    width={600}
-                    className="mt-3 rounded-xl border"
-                  />
-                )}
-                <Markdown className="prose prose-neutral mt-2 text-sm dark:prose-invert">
-                  {hackathon.description}
-                </Markdown>
+            <li key={hackathon.id}>
+              <div className="flex items-baseline justify-between gap-4">
+                <p className="font-medium">{hackathon.title}</p>
+                <p className="shrink-0 text-sm text-muted-foreground">{hackathon.dates}</p>
               </div>
-            </div>
+              <p className="text-sm text-muted-foreground">{hackathon.location}</p>
+              <Markdown className="prose prose-sm prose-neutral mt-2 max-w-none dark:prose-invert">
+                {hackathon.description}
+              </Markdown>
+            </li>
           ))}
-        </div>
+        </ul>
       </Section>
     </div>
   );

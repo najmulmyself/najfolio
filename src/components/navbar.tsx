@@ -1,4 +1,4 @@
-import { Dock, DockIcon, type DockIconProps } from "@/components/ui/dock";
+import { Dock, DockIcon } from "@/components/ui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -11,20 +11,6 @@ import { DATA } from "@/data";
 import { cn } from "@/lib/utils";
 import { Mail } from "lucide-react";
 import Link from "next/link";
-
-// Dock passes magnification props to every child; this CTA ignores them.
-function GetInTouch(_props: DockIconProps) {
-  return (
-    <Link
-      href="/#contact"
-      aria-label="Get in touch"
-      className="ml-1 inline-flex h-10 items-center gap-2 self-center rounded-full bg-emerald-600 px-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-emerald-700 sm:px-4"
-    >
-      <Mail className="size-4" />
-      <span className="hidden sm:inline">Get in touch</span>
-    </Link>
-  );
-}
 
 export default function Navbar() {
   return (
@@ -85,7 +71,25 @@ export default function Navbar() {
             </TooltipContent>
           </Tooltip>
         </DockIcon>
-        <GetInTouch />
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link
+                href="/#contact"
+                aria-label="Get in touch"
+                className={cn(
+                  buttonVariants({ variant: "ghost", size: "icon" }),
+                  "size-12"
+                )}
+              >
+                <Mail className="size-4" />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Get in touch</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
       </Dock>
     </div>
   );
